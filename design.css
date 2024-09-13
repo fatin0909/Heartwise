@@ -1,0 +1,220 @@
+.heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(-45deg);
+    animation: heartbeat 1s infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    left: 50px;
+    top: 0;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-45deg);
+    }
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: url(medicine-cardio-vital-signs.jpg) no-repeat center center/cover;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section#home {
+    color: black;
+
+}
+
+.activity-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.activity {
+    flex: 1;
+    padding: 15px;
+    background: #00ffff;
+    border: 1px solid #008b8b;
+    border-radius: 5px;
+    text-align: center;
+}
+
+section#home, section#disease, section#video, section#quiz-games {
+    background-color: #f4f4f4;
+}
+
+del,
+ins {
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+
+del{
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #afeeee;
+    border-left: 5px solid #00ace6;
+}  
+
+ins {
+    background-color: #ffffb3;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #ffff80;
+}
+
+menu {
+    background-color: #ffdab9;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #994d00;
+}
+
+summary{
+    background-color: #f08080;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #ff0000;
+}
+
+legend {
+    background-color: #e6e6fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #800080;
+}
+
+.tips {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tip {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
